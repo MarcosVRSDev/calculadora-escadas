@@ -1,0 +1,77 @@
+#landing-page {
+  background-color: #f4bc79;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 900px) {
+    #secao-inicial {
+      margin-bottom: 60px;
+
+      label {
+        font-size: 11px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+      }
+
+      ::placeholder {
+        color: #fff;
+      }
+
+      .titulo {
+        margin-bottom: 22px;
+        margin-top: 50px;
+      }
+    }
+
+    #secao-final {
+      img {
+        margin-left: 5%;
+      }
+
+      .informacao {
+        font-size: 12px;
+        margin-bottom: 45px;
+      }
+
+      .botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn-padrao {
+          background-color: #fff;
+          border: none;
+          border-radius: 100px;
+          height: 40px;
+          width: 203px;
+          font-size: 13px;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+          outline: none;
+        }
+
+        .btn-padrao:hover {
+          background-color: #2ee59d;
+          box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+          color: #fff;
+          transform: translateY(-7px);
+        }
+      }
+    }
+  }
+}
+
+.inputbox {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #fff;
+}
