@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { ResultPageComponent } from './pages/result-page/result-page.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LandingPageComponent,
+  },
+  {
+    path: 'resultado',
+    component: ResultPageComponent,
   },
 ];
 
