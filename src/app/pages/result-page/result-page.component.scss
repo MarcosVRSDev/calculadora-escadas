@@ -2,45 +2,38 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  flex-direction: row;
-}
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
 
-.container-cards {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 
-.card {
-  padding: 20px;
-  width: 20vw;
-  min-width: 250px;
-  border: 1px solid;
-  border-radius: 20px;
-  font-size: 12px;
-}
+    h1 {
+      font-size: 70px;
+      color: #ffab07;
+      padding: 10px;
+    }
 
-.card-body {
-  font-size: 12px;
-  padding: 0;
-}
+    h5 {
+      font-size: 18px;
+      color: #898a8d;
+      text-align: center;
+    }
+  }
 
-.item-card {
-  display: flex;
-  flex: 0 0 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .container-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
 
-.item-caixa {
-  min-width: 58px;
-  min-height: 30px;
-  text-align: center;
-  border: 1px solid;
-  border-radius: 30px;
-  padding: 5px 10px 5px 10px;
+  .cards-group {
+    padding: 25px;
+  }
 }

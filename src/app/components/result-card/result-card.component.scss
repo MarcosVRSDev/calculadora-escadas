@@ -1,0 +1,30 @@
+.card {
+  padding: 20px;
+  width: 20vw;
+  min-width: 250px;
+  border: 1px solid;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.card-body {
+  font-size: 12px;
+  padding: 0;
+}
+
+.item-card {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-caixa {
+  min-width: 58px;
+  min-height: 30px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+}
