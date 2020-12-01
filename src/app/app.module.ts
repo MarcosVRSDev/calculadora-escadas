@@ -3,10 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ResultPageComponent } from './pages/result-page/result-page.component';
 import { RatingCardComponent } from './components/rating-card/rating-card.component';
 import { ResultCardComponent } from './components/result-card/result-card.component';
+import { ExpandCardComponent } from './components/expand-card/expand-card.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,13 @@ import { ResultCardComponent } from './components/result-card/result-card.compon
     LandingPageComponent,
     ResultPageComponent,
     RatingCardComponent,
-    ResultCardComponent
+    ResultCardComponent,
+    ExpandCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-result-page',
@@ -6,10 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-page.component.scss']
 })
 export class ResultPageComponent implements OnInit {
+  screenHeight: number;
+  screenWidth: number;
+  public mobile: boolean = false;
 
-  constructor() { }
+  constructor() {
+    this.getScreenSize();
+  }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+    console.log(this.screenWidth);
+
+    if (this.screenWidth <= 700) {
+      this.mobile = true;
+    } else {
+      this.mobile = false;
+    }
   }
 
 }

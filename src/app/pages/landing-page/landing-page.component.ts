@@ -15,7 +15,6 @@ export class LandingPageComponent implements OnInit {
 
   goToResult() {
     this.router.navigate(['/', 'resultado']);
-    console.log("clicado")
   }
 
 }

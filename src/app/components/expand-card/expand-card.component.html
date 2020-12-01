@@ -1,0 +1,43 @@
+<div class="card">
+  <a class="card-header" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseExample">
+    <div class="card-header-top">
+      <div id="stars">
+        <span *ngFor="let star of arrStars" style="font-size: 1em; color: orange;">
+          <i class="fas fa-star"></i>
+        </span>
+      </div>
+      <div id="titulo" class="roboto">
+        {{ title }}
+      </div>
+    </div>
+    <div class="card-header-bottom">
+      <div class="item-card">
+        <p class="inter-light"><strong>COMPRIMENTO</strong></p>
+        <p class="inter-light item-caixa"><strong>{{ length }}</strong></p>
+      </div>
+    </div>
+  </a>
+  <div class="card-body" id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div class="item-card">
+      <p class="inter-light"><strong>ALTURA DE PISO A PISO</strong></p>
+      <p class="inter-light item-caixa"><strong>{{ floorHeight }}</strong></p>
+    </div>
+
+    <div class="item-card">
+      <p class="inter-light"><strong>DEGRAUS</strong></p>
+      <p class="inter-light item-caixa"><strong>{{ steps }}</strong></p>
+    </div>
+
+    <img src="{{ imgSrc }}">
+    <div class="item-card">
+      <p class="inter-light"><strong>PISO</strong></p>
+      <p class="inter-light item-caixa"><strong>{{ floor }}</strong></p>
+    </div>
+
+    <div class="item-card">
+      <p class="inter-light"><strong>ESPELHO</strong></p>
+      <p class="inter-light item-caixa"><strong>{{ length }}</strong></p>
+    </div>
+  </div>
+</div>

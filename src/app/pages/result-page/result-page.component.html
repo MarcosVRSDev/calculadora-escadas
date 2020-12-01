@@ -1,4 +1,4 @@
-<div id="container">
+<div id="container-web" *ngIf="!mobile">
   <div class="logo">
     <h1 class="confortaa-bold">
       escadômetro
@@ -50,4 +50,45 @@
     </div>
 
   </div>
+</div>
+
+<div id="container-mobile">
+  <div class="title">
+    <div class="back-home">
+      <a>
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <p class="inter">
+        Voltar para página inicial
+      </p>
+    </div>
+
+    <div class="item-titulo">
+      <p class="roboto-bold"><strong>PARA A ALTURA DE PISO A PISO</strong></p>
+      <p class="inter-light item-caixa"><strong>20</strong></p>
+    </div>
+    <p class="roboto-bold" style="text-align: left;"><strong>OPÇÕES DE ESCADAS</strong></p>
+    <p class="inter-light" style="text-align: left;">
+      Selecione uma das opções para detalhes e medidas da escada:
+    </p>
+  </div>
+  <app-expand-card title="MELHOR DE TODAS" qtStars=5 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm"
+    steps="20" floor="20 cm" mirror="20 cm" length="20 cm" style="margin-top: 15px;">
+  </app-expand-card>
+
+  <app-expand-card title="Muito Boa" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+    floor="20 cm" mirror="20 cm" length="20 cm">
+  </app-expand-card>
+
+  <app-expand-card title="Muito Boa" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+    floor="20 cm" mirror="20 cm" length="20 cm">
+  </app-expand-card>
+
+  <app-expand-card title="Muito Boa" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+    floor="20 cm" mirror="20 cm" length="20 cm">
+  </app-expand-card>
+
+  <app-expand-card title="Ruim" qtStars=3 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+    floor="20 cm" mirror="20 cm" length="20 cm">
+  </app-expand-card>
 </div>

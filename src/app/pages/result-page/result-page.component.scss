@@ -1,4 +1,4 @@
-#container {
+#container-web {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -35,5 +35,58 @@
 
   .cards-group {
     padding: 25px;
+  }
+}
+
+#container-mobile {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .back-home {
+    display: flex;
+    justify-content: flex-start;
+
+    p {
+      padding: 1px 10px;
+    }
+  }
+
+  .item-titulo {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    margin-bottom: 16px;
+    padding: 0 5px;
+    border: 1px solid;
+    border-radius: 25px;
+  }
+
+  .item-caixa {
+    min-width: 70px;
+    min-height: 25px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 30px;
   }
 }
