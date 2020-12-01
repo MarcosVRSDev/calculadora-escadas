@@ -10,6 +10,8 @@ import { ResultPageComponent } from './pages/result-page/result-page.component';
 import { RatingCardComponent } from './components/rating-card/rating-card.component';
 import { ResultCardComponent } from './components/result-card/result-card.component';
 import { ExpandCardComponent } from './components/expand-card/expand-card.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ExpandCardComponent } from './components/expand-card/expand-card.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
