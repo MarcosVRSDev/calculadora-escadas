@@ -3,17 +3,17 @@
     aria-controls="collapseExample">
     <div class="card-header-top">
       <div id="stars">
-        <span *ngFor="let star of arrStars" style="font-size: 1em; color: orange;">
+        <span class="star" *ngFor="let star of arrStars">
           <i class="fas fa-star"></i>
         </span>
       </div>
-      <div id="titulo" class="roboto">
+      <div id="titulo" class="inter">
         {{ title }}
       </div>
     </div>
     <div class="card-header-bottom">
       <div class="item-card">
-        <p class="inter-light"><strong>COMPRIMENTO</strong></p>
+        <p class="inter-light"><strong>comprimento</strong></p>
         <p class="inter-light item-caixa"><strong>{{ length }}</strong></p>
       </div>
     </div>

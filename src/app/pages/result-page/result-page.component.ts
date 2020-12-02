@@ -11,7 +11,7 @@ export class ResultPageComponent implements OnInit {
   screenWidth: number;
   public mobile: boolean = false;
 
-  constructor() {
+  constructor(private router: Router) {
     this.getScreenSize();
   }
 
@@ -29,6 +29,10 @@ export class ResultPageComponent implements OnInit {
     } else {
       this.mobile = false;
     }
+  }
+
+  goToHome() {
+    this.router.navigate(['/']);
   }
 
 }

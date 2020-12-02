@@ -12,6 +12,8 @@ import { ResultCardComponent } from './components/result-card/result-card.compon
 import { ExpandCardComponent } from './components/expand-card/expand-card.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PromptComponent } from './components/prompt/prompt.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { environment } from '../environments/environment';
     ResultPageComponent,
     RatingCardComponent,
     ResultCardComponent,
-    ExpandCardComponent
+    ExpandCardComponent,
+    PromptComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

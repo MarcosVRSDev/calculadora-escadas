@@ -52,10 +52,10 @@
   </div>
 </div>
 
-<div id="container-mobile">
+<div id="container-mobile" *ngIf="mobile">
   <div class="title">
     <div class="back-home">
-      <a>
+      <a (click)="goToHome()">
         <i class="fas fa-arrow-left"></i>
       </a>
       <p class="inter">
@@ -68,7 +68,7 @@
       <p class="inter-light item-caixa"><strong>20</strong></p>
     </div>
     <p class="roboto-bold" style="text-align: left;"><strong>OPÇÕES DE ESCADAS</strong></p>
-    <p class="inter-light" style="text-align: left;">
+    <p class="inter" style="text-align: left;">
       Selecione uma das opções para detalhes e medidas da escada:
     </p>
   </div>
@@ -76,19 +76,23 @@
     steps="20" floor="20 cm" mirror="20 cm" length="20 cm" style="margin-top: 15px;">
   </app-expand-card>
 
-  <app-expand-card title="Muito Boa" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+  <app-expand-card title="MUITO CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm"
+    steps="20" floor="20 cm" mirror="20 cm" length="20 cm">
+  </app-expand-card>
+
+  <app-expand-card title="CONFORTÁVEL" qtStars=3 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
     floor="20 cm" mirror="20 cm" length="20 cm">
   </app-expand-card>
 
-  <app-expand-card title="Muito Boa" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+  <app-expand-card title="BOA PARA PASSOS GRANDES" qtStars=3 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm"
+    steps="20" floor="20 cm" mirror="20 cm" length="20 cm">
+  </app-expand-card>
+
+  <app-expand-card title="RAZOÁVEL" qtStars=2 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
     floor="20 cm" mirror="20 cm" length="20 cm">
   </app-expand-card>
 
-  <app-expand-card title="Muito Boa" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
-    floor="20 cm" mirror="20 cm" length="20 cm">
-  </app-expand-card>
-
-  <app-expand-card title="Ruim" qtStars=3 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
+  <app-expand-card title="ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20"
     floor="20 cm" mirror="20 cm" length="20 cm">
   </app-expand-card>
 </div>
