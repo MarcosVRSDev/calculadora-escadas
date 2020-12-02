@@ -12,8 +12,8 @@
     <div class="cards-group">
       <app-rating-card title="Melhor de todas" qtStars=5></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20" floor="20 cm" mirror="20 cm"
-        length="20 cm">
+      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="20 cm" steps="20" floor="20 cm"
+        mirror="Math.ceil(stairHeight/mirroMax1)" length="20 cm">
       </app-result-card>
     </div>
 
@@ -73,7 +73,7 @@
     </p>
   </div>
   <app-expand-card title="MELHOR DE TODAS" qtStars=5 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm"
-    steps="20" floor="20 cm" mirror="20 cm" length="20 cm" style="margin-top: 15px;">
+    steps="20" floor="20 cm" mirror="{{ roundUp(stairHeight, mirroMax1) }}" length="20 cm" style="margin-top: 15px;">
   </app-expand-card>
 
   <app-expand-card title="MUITO CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result_1.svg" floorHeight="20 cm"

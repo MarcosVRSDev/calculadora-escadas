@@ -9,7 +9,7 @@ const routes: Routes = [
     component: LandingPageComponent,
   },
   {
-    path: 'resultado',
+    path: 'resultado/:stairHeight',
     component: ResultPageComponent,
   },
 ];
