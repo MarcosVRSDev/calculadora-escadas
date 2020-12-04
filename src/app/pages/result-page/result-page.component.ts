@@ -51,8 +51,15 @@ export class ResultPageComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  roundUp(valueA: number, valueB: number) {
+  mirrorNumber(valueA: number, valueB: number): number {
     return Math.ceil(valueA / valueB);
   }
+
+  mirrorHeight(valueA: number, valueB: number) {
+    var result = this.mirrorNumber(valueA, valueB);
+
+    return parseFloat((valueA / result).toString()).toFixed(2);
+  }
+
 
 }
