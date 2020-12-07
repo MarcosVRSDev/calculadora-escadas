@@ -1,13 +1,28 @@
 #landing-page {
   background: linear-gradient(180deg, rgba(231, 173, 129, 1) 0%, rgba(247, 191, 115, 1) 100%);
   color: #fff;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   padding: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    font-family: Arial;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
   input:focus {
     outline: none !important;
@@ -93,119 +108,127 @@
   }
 
   @media only screen and (min-width: 371px) and (max-width: 700px) {
-    flex-direction: column;
+    .content {
+      flex-direction: column;
 
-    #secao-inicial {
-      margin-bottom: 60px;
+      #secao-inicial {
+        margin-bottom: 60px;
 
-      .botao-web {
-        display: none !important;
+        .botao-web {
+          display: none !important;
+        }
+
+        label {
+          margin-left: 5px;
+          font-size: 12px;
+        }
+
+        input {
+          width: 90%;
+          padding: 10px;
+        }
+
+        ::placeholder {
+          color: #fff;
+        }
+
+        .titulo {
+          margin-bottom: 22px;
+          margin-top: 50px;
+        }
       }
 
-      label {
-        margin-left: 5px;
-        font-size: 12px;
-      }
+      #secao-final {
+        img {
+          width: 100%;
+          height: 35vh;
+        }
 
-      input {
-        width: 90%;
-        padding: 10px;
-      }
+        p {
+          width: 200px;
+          margin-right: 35px;
+        }
 
-      ::placeholder {
-        color: #fff;
-      }
+        .informacao {
+          font-size: 12px;
+          margin-bottom: 45px;
+        }
 
-      .titulo {
-        margin-bottom: 22px;
-        margin-top: 50px;
-      }
-    }
+        .botao-mobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-    #secao-final {
-      img {
-        width: 100%;
-        height: 35vh;
-      }
-
-      p {
-        width: 200px;
-        margin-right: 35px;
-      }
-
-      .informacao {
-        font-size: 12px;
-        margin-bottom: 45px;
-      }
-
-      .botao-mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .btn-padrao {
-          width: 203px;
-          font-size: 13px;
+          .btn-padrao {
+            width: 203px;
+            font-size: 13px;
+          }
         }
       }
     }
   }
 
   @media only screen and (max-width: 370px) {
-    flex-direction: column;
+    .content {
+      flex-direction: column;
 
-    .botao-web {
-      display: none !important;
-    }
-
-    #secao-inicial {
-      padding: 20px;
-      label {
-        margin-left: 5px;
-        font-size: 12px;
+      .botao-web {
+        display: none !important;
       }
 
-      input {
-        width: 90%;
-        padding: 10px;
+      #secao-inicial {
+        padding: 20px;
+        label {
+          margin-left: 5px;
+          font-size: 12px;
+        }
+
+        input {
+          width: 90%;
+          padding: 10px;
+        }
+
+        ::placeholder {
+          color: #fff;
+        }
+
+        .titulo {
+          margin-bottom: 22px;
+          margin-top: 15px;
+        }
       }
 
-      ::placeholder {
-        color: #fff;
-      }
+      #secao-final {
+        img {
+          width: 100%;
+          height: 35vh;
+        }
 
-      .titulo {
-        margin-bottom: 22px;
-        margin-top: 15px;
-      }
-    }
+        p {
+          width: 200px;
+          margin-right: 35px;
+        }
 
-    #secao-final {
-      img {
-        width: 100%;
-        height: 35vh;
-      }
+        .informacao {
+          font-size: 12px;
+          margin-bottom: 45px;
+        }
 
-      p {
-        width: 200px;
-        margin-right: 35px;
-      }
+        .botao-mobile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-      .informacao {
-        font-size: 12px;
-        margin-bottom: 45px;
-      }
-
-      .botao-mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .btn-padrao {
-          width: 203px;
-          font-size: 13px;
+          .btn-padrao {
+            width: 203px;
+            font-size: 13px;
+          }
         }
       }
     }
   }
+}
+
+#landing-page::-webkit-scrollbar {
+  display: none;
 }

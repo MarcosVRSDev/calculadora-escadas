@@ -1,29 +1,42 @@
 <div class="card">
   <div class="item-card">
-    <p class="inter-light"><strong>ALTURA DE PISO A PISO</strong></p>
-    <p class="inter-light item-caixa"><strong>{{ floorHeight }}</strong></p>
-  </div>
-
-  <div class="item-card">
-    <p class="inter-light"><strong>DEGRAUS</strong></p>
-    <p class="inter-light item-caixa"><strong>{{ steps }}</strong></p>
+    <p class="inter-light"><strong>comprimento</strong></p>
+    <p class="inter-light item-caixa"><strong>{{ length }}</strong></p>
   </div>
 
   <img src="{{ imgSrc }}">
   <div class="card-body">
     <div class="item-card">
-      <p class="inter-light"><strong>PISO</strong></p>
+      <p class="inter-light">
+        <strong>
+          piso <br>(largura do degrau)
+        </strong>
+      </p>
       <p class="inter-light item-caixa"><strong>{{ floor }}</strong></p>
     </div>
 
     <div class="item-card">
-      <p class="inter-light"><strong>ESPELHO</strong></p>
-      <p class="inter-light item-caixa"><strong>{{ mirror }}</strong></p>
+      <p class="inter-light"><strong>número de pisos</strong></p>
+      <p class="inter-light item-caixa"><strong>{{ steps }}</strong></p>
     </div>
 
     <div class="item-card">
-      <p class="inter-light"><strong>COMPRIMENTO</strong></p>
-      <p class="inter-light item-caixa"><strong>{{ length }}</strong></p>
+      <p class="inter-light">
+        <strong>
+          espelho <br>(altura do degrau)
+        </strong>
+      </p>
+      <p class="inter-light item-caixa"><strong>{{ floorHeight }}</strong></p>
     </div>
+
+    <div class="item-card">
+      <p class="inter-light">
+        <strong>
+          número de espelhos
+        </strong>
+      </p>
+      <p class="inter-light item-caixa"><strong>{{ mirror }}</strong></p>
+    </div>
+
   </div>
 </div>

@@ -1,30 +1,36 @@
 <div id="landing-page">
-  <form [formGroup]="form">
-    <div id="secao-inicial">
-      <h1 class="confortaa titulo">escadômetro</h1>
-      <p class="roboto-bold">CALCULADORA DE ESCADAS</p>
-      <label>Comece indicando a altura que a escada <br>vai subir de piso em piso</label>
-      <input id="alturaEscada" class="inter-light inputbox" type="text" formControlName="stairHeight"
-        placeholder="indique o valor em cm">
-      <div class="botao-web">
-        <button type="button" class="btn-padrao inter-light" (click)="goToResult()" [disabled]="form.invalid">ver todas
-          as opções -></button>
+  <header>
+    <p>MOM</p>
+  </header>
+  <div class="content">
+    <form [formGroup]="form">
+      <div id="secao-inicial">
+        <h1 class="confortaa titulo">escadômetro</h1>
+        <p class="roboto-bold">CALCULADORA DE ESCADAS</p>
+        <label>Comece indicando a altura que a escada <br>vai subir de piso em piso</label>
+        <input id="alturaEscada" class="inter-light inputbox" type="text" formControlName="stairHeight"
+          placeholder="indique o valor em cm">
+        <div class="botao-web">
+          <button type="button" class="btn-padrao inter-light" (click)="goToResult()" [disabled]="form.invalid">ver
+            todas
+            as opções -></button>
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
 
-  <div id="secao-final">
-    <img src="../../../assets/escada.svg" />
+    <div id="secao-final">
+      <img src="../../../assets/escada.svg" />
 
-    <div id="texto">
-      <p class="inter-light informacao">
-        o comprimento total da escada e suas demais medidas irá depender da opção de escada escolhida
-      </p>
-    </div>
+      <div id="texto">
+        <p class="inter-light informacao">
+          o comprimento total da escada e suas demais medidas irá depender da opção de escada escolhida
+        </p>
+      </div>
 
-    <div class="botao-mobile">
-      <button type="button" class="btn-padrao inter" (click)="goToResult()" [disabled]="form.invalid">ver todas as
-        opções -></button>
+      <div class="botao-mobile">
+        <button type="button" class="btn-padrao inter" (click)="goToResult()" [disabled]="form.invalid">ver todas as
+          opções -></button>
+      </div>
     </div>
   </div>
 </div>

@@ -44,6 +44,12 @@ a {
   text-align: center;
   border-radius: 20px;
   background-color: #f7f7f7;
+  p {
+    text-align: left;
+  }
+  p.item-caixa {
+    text-align: center;
+  }
 }
 
 .item-card {
