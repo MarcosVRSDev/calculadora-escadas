@@ -1,15 +1,18 @@
 <div id="landing-page">
   <header>
-    <p>MOM</p>
+    <a href="http://www.mom.arq.ufmg.br/mom/index.html" target="_blank">MOM</a>
   </header>
   <div class="content">
     <form [formGroup]="form">
       <div id="secao-inicial">
         <h1 class="confortaa titulo">escadômetro</h1>
-        <p class="roboto-bold">CALCULADORA DE ESCADAS</p>
-        <label>Comece indicando a altura que a escada <br>vai subir de piso em piso</label>
+        <p class="roboto-bold letter-space">CALCULADORA DE ESCADAS</p>
+        <label>
+          comece indicando a altura que a escada vai subir do piso <br>de um andar ao piso de outro andar, em
+          centímetros:
+        </label>
         <input id="alturaEscada" class="inter-light inputbox" type="text" formControlName="stairHeight"
-          placeholder="indique o valor em cm">
+          placeholder="exemplo: 270">
         <div class="text-danger invalid inter" *ngIf="!validMessage">
           Por favor, indique a altura antes de continuar
         </div>
@@ -22,11 +25,11 @@
     </form>
 
     <div id="secao-final">
-      <img src="../../../assets/escada.svg" />
+      <img src="../../../assets/landing.svg" />
 
       <div id="texto">
-        <p class="inter-light informacao">
-          o comprimento total da escada e suas demais medidas irá depender da opção de escada escolhida
+        <p class="inter-semibold informacao">
+          o comprimento total da escada e suas demais medidas dependerão da opção de escada escolhida
         </p>
       </div>
 
