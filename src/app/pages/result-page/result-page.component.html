@@ -12,7 +12,7 @@
     <div class="cards-group">
       <app-rating-card title="Melhor de todas" qtStars=5></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
+      <app-result-card imgSrc="../../../assets/result-1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
         steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}" floor="{{ floorFixed1 }} cm"
         mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm">
@@ -22,7 +22,7 @@
     <div class="cards-group">
       <app-rating-card title="Muito Boa" qtStars=4></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm"
+      <app-result-card imgSrc="../../../assets/result-2.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm"
         steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}" floor="{{ floorFixed2 }} cm"
         mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed2) }} cm">
@@ -32,7 +32,7 @@
     <div class="cards-group">
       <app-rating-card title="Boa" qtStars=3></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax2) }} cm"
+      <app-result-card imgSrc="../../../assets/result-3.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax2) }} cm"
         steps="{{ (mirrorNumber(stairHeight, mirroMax2) - 1) }}" floor="{{ floorFixed2 }} cm"
         mirror="{{ mirrorNumber(stairHeight, mirroMax2) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax2) - 1) * floorFixed2) }} cm">
@@ -42,7 +42,7 @@
     <div class="cards-group">
       <app-rating-card title="Boa para passos grandes" qtStars=3></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax3) }} cm"
+      <app-result-card imgSrc="../../../assets/result-4.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax3) }} cm"
         steps="{{ (mirrorNumber(stairHeight, mirroMax3) - 1) }}" floor="{{ floorFixed3 }} cm"
         mirror="{{ mirrorNumber(stairHeight, mirroMax3) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax3) - 1) * floorFixed3) }} cm">
@@ -50,9 +50,19 @@
     </div>
 
     <div class="cards-group">
+      <app-rating-card title="Boa para crianças" qtStars=3></app-rating-card>
+
+      <app-result-card imgSrc="../../../assets/result-5.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
+        steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}" floor="{{ floorFixed4 }} cm"
+        mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
+        length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed4) }} cm">
+      </app-result-card>
+    </div>
+
+    <div class="cards-group">
       <app-rating-card title="Razoável" qtStars=2></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
+      <app-result-card imgSrc="../../../assets/result-6.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
         steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}" floor="{{ floorFixed4 }} cm"
         mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed4) }} cm">
@@ -62,7 +72,7 @@
     <div class="cards-group">
       <app-rating-card title="Ruim" qtStars=1></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result_1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
+      <app-result-card imgSrc="../../../assets/result-7.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
         steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}" floor="{{ floorFixed1 }} cm"
         mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm">
@@ -92,37 +102,43 @@
       Selecione uma das opções para detalhes e medidas da escada:
     </p>
   </div>
-  <app-expand-card title="MELHOR DE TODAS" qtStars=5 imgSrc="../../../assets/result_1.svg"
+  <app-expand-card title="MELHOR DE TODAS" qtStars=5 imgSrc="../../../assets/result-1.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}"
     floor="{{ floorFixed1 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed1) }} cm" style="margin-top: 15px;">
   </app-expand-card>
 
-  <app-expand-card title="MUITO CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result_1.svg"
+  <app-expand-card title="MUITO CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result-2.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}"
     floor="{{ floorFixed2 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed2) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="CONFORTÁVEL" qtStars=3 imgSrc="../../../assets/result_1.svg"
+  <app-expand-card title="CONFORTÁVEL" qtStars=3 imgSrc="../../../assets/result-3.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax2) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax2) - 1) }}"
     floor="{{ floorFixed2 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax2) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax2) - 1) * floorFixed2) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="BOA PARA PASSOS GRANDES" qtStars=3 imgSrc="../../../assets/result_1.svg"
+  <app-expand-card title="BOA PARA PASSOS GRANDES" qtStars=3 imgSrc="../../../assets/result-4.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax3) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax3) - 1) }}"
     floor="{{ floorFixed3 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax3) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax3) - 1) * floorFixed3) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="RAZOÁVEL" qtStars=2 imgSrc="../../../assets/result_1.svg"
+  <app-expand-card title="BOA PARA CRIANÇAS" qtStars=3 imgSrc="../../../assets/result-5.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}"
     floor="{{ floorFixed4 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed4) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result_1.svg"
+  <app-expand-card title="RAZOÁVEL" qtStars=2 imgSrc="../../../assets/result-6.svg"
+    floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}"
+    floor="{{ floorFixed4 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
+    length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed4) }} cm">
+  </app-expand-card>
+
+  <app-expand-card title="ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result-7.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}"
     floor="{{ floorFixed1 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm">

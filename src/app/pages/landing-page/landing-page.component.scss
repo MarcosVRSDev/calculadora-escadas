@@ -1,11 +1,12 @@
 #landing-page {
-  background: linear-gradient(180deg, rgba(231, 173, 129, 1) 0%, rgba(247, 191, 115, 1) 100%);
+  background: linear-gradient(180deg, rgba(234, 117, 46, 1) 0%, rgba(247, 191, 115, 1) 100%);
   color: #fff;
   height: 100%;
   width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -57,6 +58,12 @@
   }
 
   #secao-inicial {
+    .invalid {
+      padding-top: 5px;
+      padding-left: 5px;
+      font-weight: bold;
+    }
+
     label {
       margin-left: 5px;
       font-weight: lighter;
@@ -158,6 +165,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 40px;
 
           .btn-padrao {
             width: 203px;
@@ -218,6 +226,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 40px;
 
           .btn-padrao {
             width: 203px;
@@ -225,6 +234,18 @@
           }
         }
       }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-size: 0.7em;
+      font-family: "Inter", sans-serif;
+      text-decoration: none;
+      color: white;
     }
   }
 }

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
   public form: FormGroup;
+  public validMessage: boolean = true;
 
   constructor(
     private router: Router,
@@ -16,7 +17,7 @@ export class LandingPageComponent implements OnInit {
   ) {
     this.form = this.fb.group({
       stairHeight: ['', Validators.compose([
-        Validators.required,
+        Validators.required
       ])]
     });
 
@@ -25,9 +26,14 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   goToResult() {
-    //this.router.navigate(['/', 'resultado']);
-    this.router.navigateByUrl(`/resultado/${this.form.value.stairHeight}`);
+    if (this.form.valid) {
+      this.validMessage = true;
+      this.router.navigateByUrl(`/resultado/${this.form.value.stairHeight}`);
+    } else {
+      this.validMessage = false;
+    }
   }
 
 }

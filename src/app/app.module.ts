@@ -14,6 +14,7 @@ import { PromptComponent } from './components/prompt/prompt.component';
 import { ExpandCardComponent } from './components/expand-card/expand-card.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { environment } from '../environments/environment';
     ResultCardComponent,
     ExpandCardComponent,
     PromptComponent,
+    SplashScreenComponent,
   ],
   imports: [
     BrowserModule,

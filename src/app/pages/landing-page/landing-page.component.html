@@ -10,10 +10,13 @@
         <label>Comece indicando a altura que a escada <br>vai subir de piso em piso</label>
         <input id="alturaEscada" class="inter-light inputbox" type="text" formControlName="stairHeight"
           placeholder="indique o valor em cm">
+        <div class="text-danger invalid inter" *ngIf="!validMessage">
+          Por favor, indique a altura antes de continuar
+        </div>
         <div class="botao-web">
-          <button type="button" class="btn-padrao inter-light" (click)="goToResult()" [disabled]="form.invalid">ver
-            todas
-            as opções -></button>
+          <button type="button" class="btn-padrao inter-light" (click)="goToResult()">
+            ver todas as opções ->
+          </button>
         </div>
       </div>
     </form>
@@ -28,9 +31,15 @@
       </div>
 
       <div class="botao-mobile">
-        <button type="button" class="btn-padrao inter" (click)="goToResult()" [disabled]="form.invalid">ver todas as
-          opções -></button>
+        <button type="button" class="btn-padrao inter" (click)="goToResult()">
+          ver todas as opções ->
+        </button>
       </div>
     </div>
   </div>
+  <footer>
+    <a href="https://github.com/MarcosVRSDev" target="_blank">
+      Made with 💙 by MVRSDev
+    </a>
+  </footer>
 </div>
