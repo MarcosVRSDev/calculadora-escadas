@@ -59,7 +59,7 @@ export class ResultPageComponent implements OnInit {
   mirrorHeight(valueA: number, valueB: number) {
     var result = this.mirrorNumber(valueA, valueB);
 
-    return parseFloat((valueA / result).toString()).toFixed(2);
+    return parseFloat((valueA / result).toString()).toFixed(1);
   }
 
 

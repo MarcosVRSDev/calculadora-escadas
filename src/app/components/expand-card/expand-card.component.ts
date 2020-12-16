@@ -16,6 +16,8 @@ export class ExpandCardComponent implements OnInit {
   @Input() floor: string = "";
   @Input() mirror: string = "";
   @Input() length: string = "";
+  @Input() useNote: boolean = false;
+  @Input() note: string = "";
 
   public arrStars: number[];
 

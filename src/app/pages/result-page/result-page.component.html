@@ -1,11 +1,23 @@
 <div id="container-web" *ngIf="!mobile">
   <div class="logo">
-    <h1 class="confortaa-bold">
+    <a [routerLink]="['/']" class="confortaa-bold">
       escadômetro
-    </h1>
+    </a>
     <h5 class="roboto-light">
       CALCULADORA DE ESCADAS
     </h5>
+  </div>
+
+  <div class="item-titulo">
+    <p class="roboto-bold item-web"><strong>OPÇÕES DE ESCADA PARA A ALTURA DE PISO A PISO</strong></p>
+    <p class="inter-light item-caixa item-web"><strong>{{ stairHeight }} cm</strong></p>
+  </div>
+
+  <div>
+    <p class="inter item-web">Atenção: escadas abaixo de <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+        class="fas fa-star"></i> estrelas
+      não obedecem à regras técnicas, como o código de obras.
+    </p>
   </div>
 
   <div class="container-cards">
@@ -77,6 +89,7 @@
         mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm">
       </app-result-card>
+      <p class="inter observacao-web">observação: só use se não tiver mais espaço!</p>
     </div>
 
   </div>
@@ -89,7 +102,7 @@
         <i class="fas fa-arrow-left"></i>
       </a>
       <p class="inter">
-        Voltar para página inicial
+        voltar para página inicial
       </p>
     </div>
 
@@ -141,6 +154,7 @@
   <app-expand-card title="ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result-7.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}"
     floor="{{ floorFixed1 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
-    length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm">
+    length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm" useNote=true
+    note="observação: só use se não tiver mais espaço!">
   </app-expand-card>
 </div>

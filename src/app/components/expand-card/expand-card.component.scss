@@ -2,6 +2,9 @@ a {
   text-decoration: none;
   color: black;
 }
+#titulo {
+  font-size: 0.9em;
+}
 
 .card {
   width: 20vw;
@@ -76,4 +79,11 @@ a {
 .star {
   font-size: 1em;
   color: linear-gradient(180deg, rgba(234, 117, 46, 1) 0%, rgba(247, 191, 115, 1) 100%);
+}
+
+.observacao {
+  font-size: 12px;
+  padding-top: 15px;
+  text-align: end;
+  color: #898a8d;
 }
