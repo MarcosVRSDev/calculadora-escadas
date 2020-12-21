@@ -13,11 +13,12 @@ export class ResultPageComponent implements OnInit {
 
   public stairHeight: number;
 
-  public mirroMax1: number = 17.15;
+  public mirroMax1: number = 17;
   public mirroMax2: number = 18.2;
   public mirroMax3: number = 19;
   public mirroMax4: number = 20;
   public mirroMax5: number = 15;
+  public mirrorMax6: number = 17.8;
 
   public floorFixed1: number = 30;
   public floorFixed2: number = 27.5;

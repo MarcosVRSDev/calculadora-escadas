@@ -13,31 +13,25 @@
     <p class="inter-light item-caixa item-web"><strong>{{ stairHeight }} cm</strong></p>
   </div>
 
-  <div>
-    <p class="inter item-web">Atenção: escadas abaixo de <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-        class="fas fa-star"></i> estrelas
-      não obedecem à regras técnicas, como o código de obras.
-    </p>
-  </div>
-
   <div class="container-cards">
     <div class="cards-group">
       <app-rating-card title="MELHOR DE TODAS" qtStars=5></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result-1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm"
-        steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}" floor="{{ floorFixed1 }} cm"
-        mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
-        length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm">
+      <app-result-card imgSrc="../../../assets/result-1.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm"
+        steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}" floor="{{ floorFixed1 }} cm"
+        mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
+        length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed1) }} cm">
       </app-result-card>
     </div>
 
     <div class="cards-group">
       <app-rating-card title="CONFORTÁVEL" qtStars=4></app-rating-card>
 
-      <app-result-card imgSrc="../../../assets/result-2.svg" floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm"
-        steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}" floor="{{ floorFixed2 }} cm"
-        mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
-        length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed2) }} cm">
+      <app-result-card imgSrc="../../../assets/result-2.svg"
+        floorHeight="{{ mirrorHeight(stairHeight, mirrorMax6) }} cm"
+        steps="{{ (mirrorNumber(stairHeight, mirrorMax6) - 1) }}" floor="{{ floorFixed2 }} cm"
+        mirror="{{ mirrorNumber(stairHeight, mirrorMax6) }}"
+        length="{{ ((mirrorNumber(stairHeight, mirrorMax6) - 1) * floorFixed2) }} cm">
       </app-result-card>
     </div>
 
@@ -121,13 +115,13 @@
     length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed1) }} cm" style="margin-top: 15px;">
   </app-expand-card>
 
-  <app-expand-card title="MUITO CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result-2.svg"
+  <app-expand-card title="CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result-2.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}"
     floor="{{ floorFixed2 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed2) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="CONFORTÁVEL" qtStars=3 imgSrc="../../../assets/result-3.svg"
+  <app-expand-card title="RAZOÁVEL" qtStars=3 imgSrc="../../../assets/result-3.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax2) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax2) - 1) }}"
     floor="{{ floorFixed2 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax2) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax2) - 1) * floorFixed2) }} cm">
@@ -145,13 +139,13 @@
     length="{{ ((mirrorNumber(stairHeight, mirroMax5) - 1) * floorFixed3) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="RAZOÁVEL" qtStars=2 imgSrc="../../../assets/result-6.svg"
+  <app-expand-card title="RUINZINHA" qtStars=2 imgSrc="../../../assets/result-6.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}"
     floor="{{ floorFixed4 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed4) }} cm">
   </app-expand-card>
 
-  <app-expand-card title="ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result-7.svg"
+  <app-expand-card title="SÓ EM ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result-7.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax4) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax4) - 1) }}"
     floor="{{ floorFixed1 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax4) }}"
     length="{{ ((mirrorNumber(stairHeight, mirroMax4) - 1) * floorFixed1) }} cm" useNote=true
