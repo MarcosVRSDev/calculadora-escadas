@@ -22,6 +22,7 @@
         mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed1) }} cm">
       </app-result-card>
+      <p class="inter observacao-web">observação: aprovado pela maioria das prefeituras.</p>
     </div>
 
     <div class="cards-group">
@@ -33,6 +34,7 @@
         mirror="{{ mirrorNumber(stairHeight, mirrorMax6) }}"
         length="{{ ((mirrorNumber(stairHeight, mirrorMax6) - 1) * floorFixed2) }} cm">
       </app-result-card>
+      <p class="inter observacao-web">observação: aprovado pela maioria das prefeituras.</p>
     </div>
 
     <div class="cards-group">
@@ -43,6 +45,7 @@
         mirror="{{ mirrorNumber(stairHeight, mirroMax2) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax2) - 1) * floorFixed2) }} cm">
       </app-result-card>
+      <p class="inter observacao-web">observação: aprovado por algumas prefeituras.</p>
     </div>
 
     <div class="cards-group">
@@ -73,6 +76,7 @@
         mirror="{{ mirrorNumber(stairHeight, mirroMax3) }}"
         length="{{ ((mirrorNumber(stairHeight, mirroMax3) - 1) * floorFixed3) }} cm">
       </app-result-card>
+      <p class="inter observacao-web">observação: aprovado por algumas prefeituras.</p>
     </div>
 
     <div class="cards-group">
@@ -112,19 +116,22 @@
   <app-expand-card title="MELHOR DE TODAS" qtStars=5 imgSrc="../../../assets/result-1.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}"
     floor="{{ floorFixed1 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
-    length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed1) }} cm" style="margin-top: 15px;">
+    length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed1) }} cm" style="margin-top: 15px;" useNote=true
+    note="observação: aprovado pela maioria das prefeituras.">
   </app-expand-card>
 
   <app-expand-card title="CONFORTÁVEL" qtStars=4 imgSrc="../../../assets/result-2.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax1) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax1) - 1) }}"
     floor="{{ floorFixed2 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax1) }}"
-    length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed2) }} cm">
+    length="{{ ((mirrorNumber(stairHeight, mirroMax1) - 1) * floorFixed2) }} cm" useNote=true
+    note="observação: aprovado pela maioria das prefeituras.">
   </app-expand-card>
 
   <app-expand-card title="RAZOÁVEL" qtStars=3 imgSrc="../../../assets/result-3.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax2) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax2) - 1) }}"
     floor="{{ floorFixed2 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax2) }}"
-    length="{{ ((mirrorNumber(stairHeight, mirroMax2) - 1) * floorFixed2) }} cm">
+    length="{{ ((mirrorNumber(stairHeight, mirroMax2) - 1) * floorFixed2) }} cm"
+    note="observação: aprovado por algumas prefeituras.">
   </app-expand-card>
 
   <app-expand-card title="BOA PARA PASSOS GRANDES" qtStars=3 imgSrc="../../../assets/result-4.svg"
@@ -135,14 +142,15 @@
 
   <app-expand-card title="BOA PARA CRIANÇAS" qtStars=3 imgSrc="../../../assets/result-5.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax5) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax5) - 1) }}"
-    floor="{{ floorFixed3 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax5) }}"
+    floor="{{ floorFixed3 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax5) }}" useNote=true
     length="{{ ((mirrorNumber(stairHeight, mirroMax5) - 1) * floorFixed3) }} cm">
   </app-expand-card>
 
   <app-expand-card title="RUINZINHA" qtStars=2 imgSrc="../../../assets/result-6.svg"
     floorHeight="{{ mirrorHeight(stairHeight, mirroMax3) }} cm" steps="{{ (mirrorNumber(stairHeight, mirroMax3) - 1) }}"
     floor="{{ floorFixed3 }} cm" mirror="{{ mirrorNumber(stairHeight, mirroMax3) }}"
-    length="{{ ((mirrorNumber(stairHeight, mirroMax3) - 1) * floorFixed3) }} cm">
+    length="{{ ((mirrorNumber(stairHeight, mirroMax3) - 1) * floorFixed3) }} cm" useNote=true
+    note="observação: aprovado por algumas prefeituras.">
   </app-expand-card>
 
   <app-expand-card title="SÓ EM ÚLTIMO CASO" qtStars=1 imgSrc="../../../assets/result-7.svg"
