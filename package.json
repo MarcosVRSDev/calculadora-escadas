@@ -24,6 +24,7 @@
     "@angular/service-worker": "~11.0.0",
     "@ng-bootstrap/ng-bootstrap": "^8.0.0",
     "bootstrap": "^4.5.3",
+    "collect.js": "^4.28.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

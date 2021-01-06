@@ -10,11 +10,9 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { ResultPageComponent } from './pages/result-page/result-page.component';
 import { RatingCardComponent } from './components/rating-card/rating-card.component';
 import { ResultCardComponent } from './components/result-card/result-card.component';
-import { PromptComponent } from './components/prompt/prompt.component';
 import { ExpandCardComponent } from './components/expand-card/expand-card.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +22,6 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
     RatingCardComponent,
     ResultCardComponent,
     ExpandCardComponent,
-    PromptComponent,
-    SplashScreenComponent,
   ],
   imports: [
     BrowserModule,

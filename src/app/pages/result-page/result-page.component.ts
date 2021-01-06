@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Result } from '../../models/result.model';
 
 @Component({
   selector: 'app-result-page',
@@ -12,6 +13,7 @@ export class ResultPageComponent implements OnInit {
   public mobile: boolean = false;
 
   public stairHeight: number;
+  public finalResults: Result[] = [];
 
   public mirroMax1: number = 17;
   public mirroMax2: number = 18.2;
@@ -34,7 +36,23 @@ export class ResultPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.stairHeight = parseFloat(this.route.snapshot.paramMap.get('stairHeight'));
-    console.log(Math.ceil(this.stairHeight / this.mirroMax1));
+
+    var initsResults: Result[] = this.returnInitiArray();
+
+    initsResults.forEach(result => {
+      result.setFloorHeight(this.stairHeight);
+      result.setSteps(this.stairHeight);
+      result.setMirror(this.stairHeight);
+      result.setLength();
+
+      if (this.finalResults.length > 0) {
+        if (!result.validadeEquals(this.finalResults)) {
+          this.finalResults.push(result);
+        }
+      } else {
+        this.finalResults.push(result);
+      }
+    });
   }
 
   @HostListener('window:resize', ['$event'])
@@ -63,5 +81,31 @@ export class ResultPageComponent implements OnInit {
     return parseFloat((valueA / result).toString()).toFixed(1);
   }
 
+  returnInitiArray(): Result[] {
+    var array: Result[] = [];
+
+    var result1: Result = new Result(17, "MELHOR DE TODAS", 5, "../../../assets/result-1.svg", 0, 0, 30, 0, 0, true, "observação: aprovado pela maioria das prefeituras.", true);
+    array.push(result1);
+
+    var result2: Result = new Result(17.8, "CONFORTÁVEL", 4, "../../../assets/result-2.svg", 0, 0, 27.5, 0, 0, true, "observação: aprovado pela maioria das prefeituras.", true);
+    array.push(result2);
+
+    var result3: Result = new Result(18.2, "RAZOÁVEL", 3, "../../../assets/result-3.svg", 0, 0, 27.5, 0, 0, true, "observação: aprovado por algumas prefeituras.", true);
+    array.push(result3);
+
+    var result4: Result = new Result(20, "BOA PARA PASSOS GRANDES", 3, "../../../assets/result-4.svg", 0, 0, 30, 0, 0, false, "", true);
+    array.push(result4);
+
+    var result5: Result = new Result(15, "BOA PARA CRIANÇAS", 3, "../../../assets/result-5.svg", 0, 0, 25, 0, 0, false, "", true);
+    array.push(result5);
+
+    var result6: Result = new Result(19, "RUINZINHA", 2, "../../../assets/result-6.svg", 0, 0, 25, 0, 0, true, "observação: aprovado por algumas prefeituras.", true);
+    array.push(result6);
+
+    var result6: Result = new Result(20, "SÓ EM ÚLTIMO CASO", 1, "../../../assets/result-7.svg", 0, 0, 20, 0, 0, true, "observação: só use se não tiver mais espaço!", true);
+    array.push(result6);
+
+    return array;
+  }
 
 }
