@@ -13,6 +13,7 @@ import { ResultCardComponent } from './components/result-card/result-card.compon
 import { ExpandCardComponent } from './components/expand-card/expand-card.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { NumericDirective } from './directives/numeric.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { environment } from '../environments/environment';
     RatingCardComponent,
     ResultCardComponent,
     ExpandCardComponent,
+    NumericDirective,
   ],
   imports: [
     BrowserModule,

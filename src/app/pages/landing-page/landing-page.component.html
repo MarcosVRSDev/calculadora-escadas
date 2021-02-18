@@ -1,8 +1,5 @@
 <div id="landing-page">
   <header>
-    <a href="../../../documents/escadometro-original.pdf" download>
-      <img height="69" width="35" src="../../../assets/escadometro-original.png">
-    </a>
   </header>
   <div class="content">
     <form [formGroup]="form">
@@ -10,17 +7,17 @@
         <h1 class="confortaa titulo">escadômetro</h1>
         <p class="roboto-bold letter-space">CALCULADORA DE ESCADAS</p>
         <label>
-          comece indicando a altura que a escada vai subir do piso <br>de um andar ao piso de outro andar, em
+          comece indicando a altura que a escada vai subir do<br>piso de um andar ao piso de outro andar, em
           centímetros:
         </label>
-        <input id="alturaEscada" class="inter-light inputbox" type="text" formControlName="stairHeight"
-          placeholder="exemplo: 270">
+        <input numeric id="alturaEscada" class="inter-light inputbox" type="text" formControlName="stairHeight"
+          placeholder="exemplo: 270 cm">
         <div class="text-danger invalid inter" *ngIf="!validMessage">
           Por favor, indique a altura antes de continuar
         </div>
         <div class="botao-web">
           <button type="button" class="btn-padrao inter-light" (click)="goToResult()">
-            ver todas as opções ->
+            ver opções ->
           </button>
         </div>
       </div>
@@ -37,7 +34,7 @@
 
       <div class="botao-mobile">
         <button type="button" class="btn-padrao inter" (click)="goToResult()">
-          ver todas as opções ->
+          ver opções ->
         </button>
       </div>
     </div>

@@ -14,6 +14,8 @@
     <div class="card-header-bottom">
       <div class="item-card">
         <p class="inter-light"><strong>comprimento</strong></p>
+        <img class="arrow-down" *ngIf="isCollapsed" src="../../../assets/arrow-down.svg" width="25" height="25">
+        <img class="arrow-down" *ngIf="!isCollapsed" src="../../../assets/arrow-up.svg" width="25" height="25">
         <p class="inter-light item-caixa"><strong>{{ length }}</strong></p>
       </div>
     </div>
